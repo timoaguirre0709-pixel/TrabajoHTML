@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #183153;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #28527a;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        span {
+            color: #28527a;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        button {
+            background-color: #28527a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        video, iframe {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenido a mi página web</h1>
+        <p>Un sitio para aprender sobre tecnología.</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#contenido">Contenido</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Sección principal -->
+    <section id="inicio">
+        <h2>Inicio</h2>
+
+        <p>
+            La tecnología nos permite aprender y comunicarnos.
+            Este es un ejemplo de una página creada con
+            <span>HTML y CSS</span>.
+        </p>
+
+        <img
+            src="https://placehold.co/600x300/28527a/ffffff?text=Tecnologia"
+            alt="Imagen de ejemplo sobre tecnología"
+        >
+
+        <p>
+            Visita
+            <a href="https://www.wikipedia.org/" target="_blank">
+                Wikipedia
+            </a>
+            para aprender más.
+        </p>
+    </section>
+
+    <!-- Títulos desde h1 hasta h6 -->
+    <section id="contenido">
+        <h1>Título h1</h1>
+        <h2>Título h2</h2>
+        <h3>Título h3</h3>
+        <h4>Título h4</h4>
+        <h5>Título h5</h5>
+        <h6>Título h6</h6>
+
+        <div>
+            <p>Este párrafo está dentro de un elemento div.</p>
+            <p>Los div permiten agrupar elementos de una página.</p>
+        </div>
+    </section>
+
+    <!-- Listas -->
+    <section>
+        <h2>Lista desordenada</h2>
+
+        <ul>
+            <li>Computadores</li>
+            <li>Celulares</li>
+            <li>Tabletas</li>
+        </ul>
+
+        <h2>Lista ordenada</h2>
+
+        <ol>
+            <li>Encender el computador</li>
+            <li>Abrir el navegador</li>
+            <li>Visitar una página web</li>
+        </ol>
+    </section>
+
+    <!-- Tabla -->
+    <section>
+        <h2>Tabla de dispositivos</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dispositivo</th>
+                    <th>Precio</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Computador</td>
+                    <td>$2.000.000</td>
+                    <td>Disponible</td>
+                </tr>
+
+                <tr>
+                    <td>Celular</td>
+                    <td>$1.200.000</td>
+                    <td>Disponible</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Formulario -->
+    <section id="contacto">
+        <h2>Formulario de contacto</h2>
+
+        <form action="#" method="get">
+            <label for="nombre">Nombre:</label><br>
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Escribe tu nombre"
+                required
+            ><br>
+
+            <label for="correo">Correo electrónico:</label><br>
+            <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="ejemplo@correo.com"
+                required
+            ><br>
+
+            <button type="submit">Enviar formulario</button>
+        </form>
+    </section>
+
+    <!-- Video -->
+    <section>
+        <h2>Video de ejemplo</h2>
+
+        <video controls width="500">
+            <source
+                src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                type="video/mp4"
+            >
+            Tu navegador no puede reproducir este video.
+        </video>
+    </section>
+
+    <!-- Audio -->
+    <section>
+        <h2>Audio de ejemplo</h2>
+
+        <audio controls>
+            <source
+                src="https://www.w3schools.com/html/horse.mp3"
+                type="audio/mpeg"
+            >
+            Tu navegador no puede reproducir este audio.
+        </audio>
+    </section>
+
+    <!-- Contenido externo -->
+    <section>
+        <h2>Página externa</h2>
+
+        <iframe
+            src="https://www.wikipedia.org/"
+            width="600"
+            height="300"
+            title="Página de Wikipedia">
+        </iframe>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 Mi página web. Todos los derechos reservados.</p>
+        <a href="#inicio" style="color: white;">Volver al inicio</a>
+    </footer>
+
+</body>
+</html>
